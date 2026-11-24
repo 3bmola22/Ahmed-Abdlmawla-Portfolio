@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { Award, Download, GraduationCap, Sparkles } from "lucide-react";
 import { useApp } from "../providers/AppProvider";
