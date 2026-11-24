@@ -2,7 +2,7 @@ import "../globals.css";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-const SITE = "https://ahmed-abdlmawla-portfolio.vercel.app";
+const SITE = "https://ahmed-salamah.vercel.app";
 const langs = ["en", "ar"] as const;
 
 const meta = {
