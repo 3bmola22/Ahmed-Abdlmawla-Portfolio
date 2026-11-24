@@ -3,8 +3,8 @@
 // =============================================================
 
 export const personal = {
-  name: "Ahmed Abdlmawla",
-  nameAr: "أحمد عبد المولى",
+  name: "Ahmed Salamah",
+  nameAr: "احمد سلامه",
   role: "Junior Front-End Developer",
   location: "Cairo, Egypt",
   email: "3bmola22@gmail.com",
