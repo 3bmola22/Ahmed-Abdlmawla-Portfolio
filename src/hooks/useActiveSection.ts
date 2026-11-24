@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 
 /**
@@ -32,13 +33,13 @@ export function useActiveSection(ids: string[], rootMargin = "-40% 0px -55% 0px"
 }
 
 /** Track scroll position past a threshold. */
-export function useScrolledPast(threshold = 100) {
+export function useScrolledPast(threshold = 100, asViewportRatio = false) {
   const [past, setPast] = useState(false);
   useEffect(() => {
-    const onScroll = () => setPast(window.scrollY > threshold);
+    const onScroll = () => setPast(window.scrollY > (asViewportRatio ? window.innerHeight * threshold : threshold));
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [threshold]);
+  }, [threshold, asViewportRatio]);
   return past;
 }

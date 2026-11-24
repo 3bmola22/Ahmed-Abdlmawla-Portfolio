@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { ArrowDown, ArrowRight, Globe, Mail, MapPin, Moon, Sun } from "lucide-react";
 import { GithubIcon } from "./icons";
@@ -25,8 +26,8 @@ export default function Hero() {
 
       {/* Mini top bar (لأن الـ Navbar مش ظاهر فوق الـ Hero) */}
       <div className="container-x pt-6 sm:pt-8 relative">
-        <div className="flex items-center justify-between">
-          <a href="#home" className="flex items-center gap-2.5 group">
+        <div className="flex items-center justify-between gap-3">
+          <a href="#home" className="flex shrink-0 items-center gap-2.5 group">
             <MdDevices size={30} />
 
             <span className="hidden sm:flex flex-col leading-tight">
@@ -38,8 +39,8 @@ export default function Hero() {
               </span>
             </span>
           </a>
-          <p className="text-xl font-bold">React.js Developer</p>
-          <div className="flex items-center gap-1.5">
+          <p className="min-w-0 flex-1 truncate text-center text-sm font-bold sm:text-xl">React.js Developer</p>
+          <div className="flex shrink-0 items-center gap-1.5">
             <button
               onClick={toggleLang}
               className="inline-flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-xs font-semibold text-ink-700 hover:bg-ink-100 dark:text-ink-200 dark:hover:bg-white/5 transition"
@@ -216,7 +217,7 @@ export default function Hero() {
           className="relative mt-20 overflow-hidden border-y border-ink-200/70 py-5 dark:border-white/10"
         >
           <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent dark:from-ink-950 z-10" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-ink-50 to-transparent dark:from-ink-900 z-10" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent dark:from-ink-950 z-10" />
           <div className="flex w-max animate-marquee gap-10 whitespace-nowrap">
             {[...skills, ...skills].map((s, i) => (
               <span

@@ -1,4 +1,6 @@
+"use client";
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import { translations, type Dict, type Lang } from "../i18n/translations";
 export type { Dict };
 
@@ -15,17 +17,14 @@ type AppContextValue = {
 
 const AppContext = createContext<AppContextValue | null>(null);
 
-export function AppProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window === "undefined") return "dark";
+export function AppProvider({ lang, children }: { lang: Lang; children: React.ReactNode }) {
+  const router = useRouter();
+  const [theme, setTheme] = useState<Theme>("dark");
+
+  useEffect(() => {
     const stored = localStorage.getItem("theme") as Theme | null;
-    return stored ?? "dark";
-  });
-  const [lang, setLang] = useState<Lang>(() => {
-    if (typeof window === "undefined") return "en";
-    const stored = localStorage.getItem("lang") as Lang | null;
-    return stored ?? "en";
-  });
+    if (stored === "light" || stored === "dark") setTheme(stored);
+  }, []);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -34,23 +33,16 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  useEffect(() => {
-    const root = document.documentElement;
-    root.lang = lang;
-    root.dir = lang === "ar" ? "rtl" : "ltr";
-    localStorage.setItem("lang", lang);
-  }, [lang]);
-
   const value = useMemo<AppContextValue>(
     () => ({
       theme,
       toggleTheme: () => setTheme((p) => (p === "dark" ? "light" : "dark")),
       lang,
-      toggleLang: () => setLang((p) => (p === "en" ? "ar" : "en")),
+      toggleLang: () => router.push(lang === "en" ? "/ar" : "/en"),
       t: translations[lang],
       dir: lang === "ar" ? "rtl" : "ltr",
     }),
-    [theme, lang]
+    [theme, lang, router]
   );
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

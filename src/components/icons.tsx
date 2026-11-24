@@ -1,3 +1,4 @@
+"use client";
 // Brand icons that lucide-react no longer ships.
 import type { SVGProps } from "react";
 
