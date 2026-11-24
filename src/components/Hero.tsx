@@ -199,9 +199,9 @@ export default function Hero() {
                 </div>
                 <div>
                   <div className="text-[11px] text-ink-500 dark:text-ink-400">
-                    Lighthouse
+                    {lang === "ar" ? "مبني بـ" : "Built with"}
                   </div>
-                  <div className="text-sm font-bold">98–100 / 100</div>
+                  <div className="text-sm font-bold">React 19 + TypeScript</div>
                 </div>
               </motion.div>
             </motion.div>
