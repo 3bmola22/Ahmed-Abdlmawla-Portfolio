@@ -98,7 +98,7 @@ export const translations: Record<Lang, Dict> = {
       title2: "I build fast,",
       title3: "modern web experiences.",
       subtitle:
-        "React.js Developer skilled in HTML, CSS, JavaScript, React 19, Next.js, TypeScript & Tailwind CSS. Built an e-commerce platform with 98–100 Lighthouse scores. Focused on front-end development, responsive web applications & user interface design.",
+        "React.js Developer skilled in HTML, CSS, JavaScript, React 19, Next.js, TypeScript & Tailwind CSS. Built an e-commerce platform focused on performance. Focused on front-end development, responsive web applications & user interface design.",
       cta1: "View Projects",
       cta2: "Get in Touch",
       scroll: "Scroll",
@@ -175,10 +175,10 @@ export const translations: Record<Lang, Dict> = {
     hero: {
       eyebrow: "متاح لفرص عمل جديدة",
       title1: "أهلاً، أنا أحمد.",
-      title2: "أصمّم تجارب ويب",
+      title2: "أبني تجارب ويب",
       title3: "حديثة وسريعة الأداء.",
       subtitle:
-        "مطوّر واجهات أمامية متخصص في React.js، أمتلك خبرة بـ HTML و CSS و JavaScript و React 19 و Next.js و TypeScript و Tailwind CSS. طوّرت متجراً إلكترونياً بنتائج Lighthouse تتراوح بين 98 و 100. تركيزي الأساسي على تطوير الواجهات الأمامية وتصميم تطبيقات ويب متجاوبة وتجربة مستخدم متميزة.",
+        "مطوّر واجهات أمامية متخصص في React.js، أمتلك خبرة بـ HTML و CSS و JavaScript و React 19 و Next.js و TypeScript و Tailwind CSS. طوّرت متجراً إلكترونياً مع تركيز على الأداء. تركيزي الأساسي على تطوير الواجهات الأمامية وتصميم تطبيقات ويب متجاوبة وتجربة مستخدم متميزة.",
       cta1: "استعرض الأعمال",
       cta2: "تواصل معي",
       scroll: "اسحب للأسفل",
