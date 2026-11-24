@@ -192,7 +192,7 @@ export default function Hero() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.6 }}
-                className="absolute -bottom-4 -left-4 hidden sm:flex items-center gap-2 rounded-2xl border border-ink-200 bg-white px-3 py-2 shadow-xl dark:border-white/10 dark:bg-ink-900"
+                className="absolute -top-4 -left-4 hidden sm:flex items-center gap-2 rounded-2xl border border-ink-200 bg-white px-3 py-2 shadow-xl dark:border-white/10 dark:bg-ink-900"
               >
                 <div className="grid h-9 w-9 place-items-center rounded-xl bg-emerald-500/15 text-emerald-500 text-base font-black">
                   ⚡
