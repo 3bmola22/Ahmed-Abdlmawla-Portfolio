@@ -12,7 +12,7 @@ export const personal = {
   phoneDisplay: "01515397160",
   github: "https://github.com/3bmola22",
   whatsapp: "https://wa.me/201515397160",
-  cvPath: "/Ahmed_Abdlmawla_Junior Front-End Developer (React.js Developer).pdf", // يا أحمد: ضع ملف cv.pdf داخل مجلد public
+  cvPath: "https://docs.google.com/document/d/1mrv93ucu9l4WTieVSfpiKaDo6z7U_Fqu/edit?usp=sharing",
   profileImage: "/images/profile.jpg",
 };
 
