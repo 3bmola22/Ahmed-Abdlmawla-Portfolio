@@ -7,14 +7,14 @@ const langs = ["en", "ar"] as const;
 
 const meta = {
   en: {
-    title: "Ahmed Abdlmawla | Junior Front-End Developer (React.js), Cairo, Egypt",
+    title: "Ahmed Salamah | Junior Front-End Developer (React.js), Cairo, Egypt",
     description:
-      "Ahmed Abdlmawla is a Junior Front-End Developer in Cairo, Egypt. He builds web apps with React 19, Next.js, TypeScript and Tailwind CSS. See his projects and get in touch.",
+      "Ahmed Salamah is a Junior Front-End Developer in Cairo, Egypt. He builds web apps with React 19, Next.js, TypeScript and Tailwind CSS. See his projects and get in touch.",
   },
   ar: {
-    title: "أحمد عبد المولى | مطوّر واجهات أمامية مبتدئ (React.js)، القاهرة، مصر",
+    title: "احمد سلامه | مطوّر واجهات أمامية مبتدئ (React.js)، القاهرة، مصر",
     description:
-      "أحمد عبد المولى مطوّر واجهات أمامية مبتدئ في القاهرة، مصر. يبني تطبيقات ويب بـ React 19 وNext.js وTypeScript وTailwind CSS. شاهد أعماله وتواصل معه.",
+      "احمد سلامه مطوّر واجهات أمامية مبتدئ في القاهرة، مصر. يبني تطبيقات ويب بـ React 19 وNext.js وTypeScript وTailwind CSS. شاهد أعماله وتواصل معه.",
   },
 };
 
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     metadataBase: new URL(SITE),
     title: m.title,
     description: m.description,
-    authors: [{ name: "Ahmed Abdlmawla" }],
+    authors: [{ name: "Ahmed Salamah" }],
     alternates: {
       canonical: `/${lang}`,
       languages: { en: "/en", ar: "/ar", "x-default": "/en" },
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       description: m.description,
       locale: lang === "ar" ? "ar_EG" : "en_US",
       alternateLocale: lang === "ar" ? "en_US" : "ar_EG",
-      images: [{ url: "/images/profile.jpg", alt: "Ahmed Abdlmawla" }],
+      images: [{ url: "/images/profile.jpg", alt: "Ahmed Salamah" }],
     },
     twitter: { card: "summary", title: m.title, description: m.description, images: ["/images/profile.jpg"] },
   };
@@ -61,8 +61,8 @@ export default async function LangLayout({
   const ld = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Ahmed Abdlmawla",
-    alternateName: "أحمد عبد المولى",
+    name: "Ahmed Salamah",
+    alternateName: "احمد سلامه",
     jobTitle: "Junior Front-End Developer",
     url: `${SITE}/${lang}`,
     email: "mailto:3bmola22@gmail.com",
