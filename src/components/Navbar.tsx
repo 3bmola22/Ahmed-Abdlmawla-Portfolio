@@ -131,7 +131,8 @@ export default function Navbar() {
 
                 <a
                   href={personal.cvPath}
-                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hidden sm:inline-flex items-center gap-2 rounded-lg bg-ink-950 px-3.5 py-2 text-xs font-semibold text-white hover:bg-ink-800 dark:bg-white dark:text-ink-950 dark:hover:bg-ink-100 transition shadow-sm"
                 >
                   <Download className="h-3.5 w-3.5" />
@@ -188,7 +189,8 @@ export default function Navbar() {
                     </button>
                     <a
                       href={personal.cvPath}
-                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex-1 rounded-lg bg-ink-950 px-3 py-2 text-xs font-semibold text-white text-center dark:bg-white dark:text-ink-950"
                     >
                       {t.nav.downloadCV}
