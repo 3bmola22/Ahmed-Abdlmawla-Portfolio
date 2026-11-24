@@ -1,3 +1,4 @@
+"use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { Download, Globe, Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
@@ -13,7 +14,7 @@ export default function Navbar() {
   const { t, theme, toggleTheme, lang, toggleLang } = useApp();
   const active = useActiveSection([...SECTIONS]);
   // الـ Navbar يظهر ويثبت بعد ما المستخدم يعدّي الـ Hero Section
-  const scrolled = useScrolledPast(window.innerHeight * 0.85);
+  const scrolled = useScrolledPast(0.85, true);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const labels: Record<(typeof SECTIONS)[number], string> = {
