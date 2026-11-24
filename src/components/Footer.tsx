@@ -1,3 +1,4 @@
+"use client";
 import { useApp } from "../providers/AppProvider";
 import { personal } from "../data/portfolio";
 import { GithubIcon, WhatsAppIcon } from "./icons";
