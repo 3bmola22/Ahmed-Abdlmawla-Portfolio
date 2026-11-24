@@ -34,11 +34,12 @@ export default function About() {
                 CV / Resume
               </div>
               <p className="mt-3 text-sm text-ink-600 dark:text-ink-300">
-                {t.about.downloadCV} — PDF.
+                {t.about.downloadCV}.
               </p>
               <a
                 href={personal.cvPath}
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center gap-2 rounded-xl bg-ink-950 px-5 py-3 text-sm font-semibold text-white hover:bg-ink-800 dark:bg-white dark:text-ink-950 dark:hover:bg-ink-100 transition shadow-lg shadow-ink-950/10"
               >
                 <Download className="h-4 w-4" />
