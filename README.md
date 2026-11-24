@@ -1,6 +1,6 @@
-# Ahmed Abdlmawla — Portfolio
+# Ahmed Salamah — Portfolio
 
-موقع شخصي (Portfolio) لـ **Ahmed Abdlmawla** — Junior Front-End Developer (React.js).
+موقع شخصي (Portfolio) لـ **Ahmed Salamah** — Junior Front-End Developer (React.js).
 
 ## الستاك المستخدم
 - React 19 + Vite + TypeScript
