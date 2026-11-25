@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     title: m.title,
     description: m.description,
     authors: [{ name: "Ahmed Salamah" }],
+    verification: { google: "oAE74jsSBMbQ76KFP5lU0OIA2wQOSKVJ1fwlgCY8mBM" },
     alternates: {
       canonical: `/${lang}`,
       languages: { en: "/en", ar: "/ar", "x-default": "/en" },
